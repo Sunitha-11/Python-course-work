@@ -58,11 +58,11 @@ if a > b:
     print(True)
 else:
     print(False)    #False
-print(type(a > b))   #boolean
+print(type(a > b))   #<class 'bool'>
 
 
 
-  #6.none type
+#6.none type
 a=None
 print(a)   #None
-print(type(a))  #"Nonetype"
+print(type(a))  #<class 'NoneType'>

@@ -27,4 +27,4 @@ print(a,b) #output=20 10
 #Deleying variables
 a=50
 del a
-print(a)
+print(a) #output=NameError: name 'a' is not defined
