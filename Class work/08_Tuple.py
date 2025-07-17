@@ -77,7 +77,6 @@ print(sum(a))    #15
 Tuple = (1, 2, 3, 4, 5)
 print(Tuple[1:5])  # Output: (2, 3, 4, 5)
 
-
 #nested Tuple()
 nested_tuple = (1, [2, 3])
 nested_tuple[1][0] = 100
