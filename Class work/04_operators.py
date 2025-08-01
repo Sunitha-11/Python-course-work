@@ -134,7 +134,7 @@ print(s is not m) #true if both variables are printing to the same value
  #set
 a=[1,2,3]
 b=[1,2,3]
-print(a is not  b) #teue
+print(a is not  b) #true
 print(a is  b) #false
 c=a
 print(a is c) #true
