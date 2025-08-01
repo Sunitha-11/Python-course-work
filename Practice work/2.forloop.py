@@ -41,3 +41,13 @@ n"""
 num=int(input("enter the table:"))
 for i in range(1,11):
     print(f"{num}*{i}={num*i}")
+
+
+
+ #Calculate the sum of numbers in the list using a for loop.
+number=list(map(int,input("enter the number:").split()))
+num=0
+for i in number:
+    num+=i
+print("sum",num)
+    
