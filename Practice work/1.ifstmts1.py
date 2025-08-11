@@ -260,3 +260,15 @@ if original==reverse_num:
     print("palindrome number")
 else:
     print("not a palindrome number")
+
+
+#22. Sum of Digits Using Recursion
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum_of_digits(n // 10)
+num = int(input("Enter a number: "))
+result = sum_of_digits(num)
+print(f"Sum of digits in {num} is: {result}")
+

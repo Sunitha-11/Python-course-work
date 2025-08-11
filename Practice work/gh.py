@@ -1,3 +1,8 @@
-s=["suni","saik","a","an"]
-str=list(filter(lambda i: len(i)<3,s))
-print(str)
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum_of_digits(n // 10)
+num = int(input("Enter a number: "))
+result = sum_of_digits(num)
+print(f"Sum of digits in {num} is: {result}")

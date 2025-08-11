@@ -77,3 +77,31 @@ from functools import reduce
 l=[1,2,3]
 lup=reduce(lambda pro,items:pro*items,l)
 print(lup)    #6
+
+#16.Use lambda with filter to find multiples of 3
+l=[1, 3, 4, 6, 9]
+multipleof3=list(filter(lambda i:i%3==0,l))
+print(multipleof3)    #[3, 6, 9]
+
+
+#17. Sort words in a list by their length
+words=["apple","banana","elephant","dpg"]
+sortwords=sorted(words,key=lambda i:len(i))
+print(sortwords)
+#['dpg', 'apple', 'banana', 'elephant']
+
+
+
+
+
+
+#19.Use lambda to get last digit of a number
+lastdigit=lambda n:n%10
+print(lastdigit(12345))     #5
+
+
+
+#20
+year=lambda n:"Leap year" if n%4==0 or n%400==0 and n%100!=0 else"Not a leap year"
+print(year(2024))    #Leap year
+print(year(2023))    #Not a leap year
