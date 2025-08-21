@@ -1,8 +1,5 @@
-def sum_of_digits(n):
-    if n == 0:
-        return 0
-    else:
-        return n % 10 + sum_of_digits(n // 10)
-num = int(input("Enter a number: "))
-result = sum_of_digits(num)
-print(f"Sum of digits in {num} is: {result}")
+def check_annagram(s1,s2):
+    if len(s1) != len(s2):
+        return False
+    return sorted(s1) == sorted(s2)
+print(check_annagram("listen", "silent"))  #True
